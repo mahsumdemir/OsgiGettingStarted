@@ -16,12 +16,12 @@ public class Upper {
     @Path("rest/upper/{param}")
     @GET
     public String toUpper(@PathParam("param") String param) {
-        return param.toUpperCase() + "AAAAA";
+        return param.toUpperCase();
     }
 
     @Path("rest/lower/{param}")
     @GET
     public String toLower(@PathParam("param") String param) {
-        return param.toLowerCase() + "aaaaa";
+        return param.toLowerCase();
     }
 }

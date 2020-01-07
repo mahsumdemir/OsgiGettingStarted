@@ -54,6 +54,7 @@
                 <configuration>
                     <bndruns>
                         <bndrun>app.bndrun</bndrun>
+                        <bndrun>debug.bndrun</bndrun>
                     </bndruns>
                 </configuration>
             </plugin>

@@ -5,5 +5,7 @@ ports:
   - port: 8080
     onOpen: ignore
 tasks:
-  - init: mvn clean install && cd app && mvn bnd-run:run
+  - init: mvn clean install && cd app
+    command: mvn bnd-run:run
+  - openIn: right
     command: gp preview $(gp url 8080)rest/upper/welcome

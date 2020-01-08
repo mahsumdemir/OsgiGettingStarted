@@ -6,4 +6,6 @@ ports:
     onOpen: ignore
 tasks:
   - init: mvn clean install
-    command: bash watch.sh
+    command: cd app && mvn bnd-run:run
+  - command: gp preview $(gp url 8080)/rest/upper/welcome
+    openIn: right
